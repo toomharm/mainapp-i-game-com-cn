@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://toomharm.github.io/mainapp-i-game-com-cn/sitemap.xml
