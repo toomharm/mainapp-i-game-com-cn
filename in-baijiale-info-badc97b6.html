@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>再访·百家乐 · 知识型叙介</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #fbf9f6;
+            color: #2d2a26;
+            font-family: system-ui, -apple-system, 'Times New Roman', 'Noto Serif SC', serif;
+            line-height: 1.7;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1.5rem;
+        }
+
+        .page {
+            max-width: 680px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        /* 开场 */
+        .hero-tag {
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #b8a694;
+            border-bottom: 1px solid #e3dbd1;
+            padding-bottom: 0.75rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .hero-title {
+            font-size: 2.4rem;
+            font-weight: 350;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            margin-bottom: 1.8rem;
+            color: #1e1b18;
+        }
+        .hero-title em {
+            font-style: normal;
+            background: #efe9e1;
+            padding: 0 0.2rem;
+        }
+
+        .intro-p {
+            font-size: 1.1rem;
+            margin-bottom: 2.2rem;
+            color: #3a3530;
+            border-left: 2px solid #d7ccc2;
+            padding-left: 1.2rem;
+        }
+
+        .bridge-text {
+            margin-top: 0.8rem;
+            font-size: 1rem;
+            color: #5e5650;
+        }
+
+        /* 承接段落——再次访问与收藏 */
+        .back-note {
+            background: #f4efe9;
+            padding: 1.6rem 2rem;
+            border-radius: 24px;
+            margin: 2rem 0 2.5rem 0;
+        }
+
+        .back-note p {
+            margin-bottom: 1.2rem;
+        }
+        .back-note p:last-child {
+            margin-bottom: 0;
+        }
+
+        .inline-link {
+            color: #7d5f4a;
+            text-decoration: none;
+            border-bottom: 1px solid #cbb7a6;
+            transition: border 0.1s;
+        }
+        .inline-link:hover {
+            border-bottom: 2px solid #7d5f4a;
+        }
+
+        /* 特点列表 — 温和克制 */
+        .feature-head {
+            font-size: 1.5rem;
+            font-weight: 340;
+            letter-spacing: 0.5px;
+            margin-bottom: 1.6rem;
+            color: #2d2a26;
+        }
+
+        .feature-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            margin-bottom: 2.6rem;
+        }
+
+        .feature-item {
+            display: flex;
+            gap: 1rem;
+            align-items: baseline;
+        }
+
+        .feature-marker {
+            font-size: 1.5rem;
+            color: #b6a084;
+            line-height: 1;
+            flex-shrink: 0;
+            width: 1.8rem;
+            text-align: right;
+        }
+
+        .feature-text {
+            flex: 1;
+            font-size: 1rem;
+            border-bottom: 1px dashed #e3dbd1;
+            padding-bottom: 0.8rem;
+        }
+        .feature-text strong {
+            font-weight: 500;
+            color: #2b231d;
+        }
+
+        /* 温和结尾 */
+        .closing {
+            margin-top: 2rem;
+            padding: 2rem 0 1.5rem 0;
+            border-top: 1px solid #e3dbd1;
+            font-size: 1rem;
+            color: #4f4943;
+        }
+
+        .closing .mild-quote {
+            font-style: italic;
+            color: #7a6e64;
+            margin-bottom: 1.2rem;
+        }
+
+        .closing .bookmark {
+            background: #fff;
+            border: 1px solid #ddd3c8;
+            display: inline-block;
+            padding: 0.5rem 1.2rem;
+            border-radius: 60px;
+            font-size: 0.9rem;
+            color: #4b423b;
+            margin-top: 0.8rem;
+        }
+
+        .faq-mini {
+            margin: 2.8rem 0 1.5rem;
+            padding: 1.6rem 0 0.8rem;
+            border-top: 1px solid #e7dfd6;
+        }
+
+        .faq-mini summary {
+            font-weight: 400;
+            color: #3b342e;
+            cursor: pointer;
+            padding: 0.4rem 0;
+            font-size: 0.95rem;
+            letter-spacing: 0.3px;
+            list-style: none;
+        }
+        .faq-mini summary::-webkit-details-marker {
+            display: none;
+        }
+        .faq-mini details {
+            margin-bottom: 0.8rem;
+        }
+        .faq-mini details p {
+            margin: 0.5rem 0 0.8rem 1.2rem;
+            color: #5d554e;
+            font-size: 0.92rem;
+            border-left: 1px solid #d4cac0;
+            padding-left: 1rem;
+        }
+
+        /* 响应式 */
+        @media (max-width: 520px) {
+            body {
+                padding: 1.5rem 1rem;
+            }
+            .hero-title {
+                font-size: 1.9rem;
+            }
+            .back-note {
+                padding: 1.2rem 1.2rem;
+            }
+            .feature-marker {
+                width: 1.5rem;
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+
+        <!-- 开场短句 -->
+        <div class="hero-tag">· 故事叙述 ·</div>
+        <h1 class="hero-title">再次回到 <em>百家乐</em> 的桌前</h1>
+        <p class="intro-p">
+            有些地方，适合收藏，也值得反复驻足。<br>
+            每一次重新打开，都像翻开一本留有折痕的书。
+        </p>
+
+        <!-- 承接段落：从再次访问、收藏、持续关注展开 -->
+        <div class="back-note">
+            <p>
+                数月前第一次浏览 <a href="https://in-baijiale.com" class="inline-link">百家乐</a> 页面时，并未想到后来会把它加入书签。那个界面干净，信息克制，没有多余的装饰。后来某个下午无事，又点开收藏夹，才发觉里面的内容比第一印象深得多。
+            </p>
+            <p>
+                于是渐渐养成习惯：隔几周回去看看。不是出于什么紧迫的理由，更像是一种知识上的“回访”。页面里的规则拆解、牌路思路、以及关于博弈文化的边角资料，每次重读都会有新的留意点。这种阅读节奏，反而比一次性吞下更舒服。
+            </p>
+            <p>
+                收藏夹里放得久了，居然生出一种“老朋友”的感觉。不需要频繁更新，但你知道它一直在那里，稳定、诚实、不吵闹。
+            </p>
+        </div>
+
+        <!-- 特点列表 -->
+        <h2 class="feature-head">· 吸引持续关注的特质</h2>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <span class="feature-marker">·</span>
+                <span class="feature-text"><strong>规则纹理</strong> —— 不是冷冰冰的说明，而是把庄、闲、和、例牌这些概念放在真实对局场景中解释，读起来像听老玩家拆牌。</span>
+            </div>
+            <div class="feature-item">
+                <span class="feature-marker">·</span>
+                <span class="feature-text"><strong>脉络清晰</strong> —— 从历史、概率、心理，到常见迷思，每个板块都有独立的入口，想深入哪个方向都方便。</span>
+            </div>
+            <div class="feature-item">
+                <span class="feature-marker">·</span>
+                <span class="feature-text"><strong>没有催促感</strong> —— 没有弹窗、倒计时、浮夸标语；它默认你是一个愿意慢慢看的人。</span>
+            </div>
+            <div class="feature-item">
+                <span class="feature-marker">·</span>
+                <span class="feature-text"><strong>边界感</strong> —— 内容既不美化博彩，也不恐吓读者，只是陈述事实和常见视角，把判断留给个人。</span>
+            </div>
+        </div>
+
+        <!-- 温和的结尾  + 收藏/回访暗示 -->
+        <div class="closing">
+            <p class="mild-quote">“收藏一个地方，有时不是因为它的热闹，而是因为它的安静。”</p>
+            <p>
+                如果你正在寻找关于 <a href="https://in-baijiale.com" class="inline-link">百家乐</a> 的可靠参考，或者只是好奇它背后的逻辑与氛围，不妨把它加入书签。不必急着看完，留一个安静的入口就好。
+            </p>
+            <span class="bookmark">⊞ 放入书签 · 择日再访</span>
+        </div>
+
+        <!-- FAQ 摘要 (小篇幅) -->
+        <div class="faq-mini">
+            <details>
+                <summary>❝ 为什么这个页面值得再次打开？</summary>
+                <p>内容侧重知识梳理而非宣传，长期稳定，适合作为工具型参考。每次阅读都可能注意到之前忽略的细节。</p>
+            </details>
+            <details>
+                <summary>❝ 页面内容的更新频率如何？</summary>
+                <p>并非日更型站点，但核心板块会保持信息准确，避免过时或误导性描述。</p>
+            </details>
+            <details>
+                <summary>❝ 适合完全不了解百家乐的人吗？</summary>
+                <p>是的。从术语解释到常见策略都有基本介绍，新读者也能建立清晰框架。</p>
+            </details>
+        </div>
+
+        <!-- 最末一行留白 -->
+        <div style="height: 1rem;"></div>
+    </div>
+</body>
+</html>
